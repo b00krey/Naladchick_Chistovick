@@ -22,6 +22,7 @@
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"lvl","folderPath":"folders/Rooms/lvl.yy","name":"lvl","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"mainmenu","folderPath":"folders/Rooms/mainmenu.yy","name":"mainmenu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -46,10 +47,12 @@
   "resources":[
     {"id":{"name":"fnt_gost","path":"fonts/fnt_gost/fnt_gost.yy",},},
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+    {"id":{"name":"rm_tseh1","path":"rooms/rm_tseh1/rm_tseh1.yy",},},
     {"id":{"name":"bg_mainmenu","path":"sprites/bg_mainmenu/bg_mainmenu.yy",},},
+    {"id":{"name":"bg_tseh","path":"sprites/bg_tseh/bg_tseh.yy",},},
     {"id":{"name":"ui_exit","path":"sprites/ui_exit/ui_exit.yy",},},
     {"id":{"name":"ui_game_overlay","path":"sprites/ui_game_overlay/ui_game_overlay.yy",},},
-    {"id":{"name":"ui_gamepause","path":"sprites/ui_gamepause/ui_gamepause.yy",},},
+    {"id":{"name":"ui_game_pause","path":"sprites/ui_game_pause/ui_game_pause.yy",},},
     {"id":{"name":"ui_play","path":"sprites/ui_play/ui_play.yy",},},
     {"id":{"name":"ui_premia_unit","path":"sprites/ui_premia_unit/ui_premia_unit.yy",},},
     {"id":{"name":"ui_records","path":"sprites/ui_records/ui_records.yy",},},
@@ -60,6 +63,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+    {"roomId":{"name":"rm_tseh1","path":"rooms/rm_tseh1/rm_tseh1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
