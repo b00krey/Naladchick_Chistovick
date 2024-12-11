@@ -9,7 +9,7 @@ if global.intro_is_playing
 	}
 }
 
-if global.intro_timer == global.intro_stop_turn
+if global.intro_turn == global.intro_stop_turn
 {
 	global.intro_is_playing = false;
 }
@@ -18,5 +18,10 @@ if global.intro_timer == global.intro_stop_turn
 //Game timer
 if !global.intro_is_playing
 {
-	
+	global.timer += 1;
+	if global.timer == global.turn_counter
+	{
+		global.turn += 1;
+		global.timer = 0;
+	}
 }

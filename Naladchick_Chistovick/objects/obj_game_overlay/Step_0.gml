@@ -7,3 +7,14 @@ if global.intro_is_playing
 		y = intro_moves[global.intro_turn];
 	}		
 }
+
+
+//Game start
+if (!global.intro_is_playing) && (global.turn == 0)
+{
+	y = 656;
+	sprite_index = spr_game_overlay;
+	instance_create_layer(-130, 666, "golovas", obj_premya1);
+	instance_create_layer(-77, 666, "golovas", obj_premya2);
+	instance_create_layer(-24, 666, "golovas", obj_premya3)
+}

@@ -7,3 +7,11 @@ if global.intro_is_playing
 		y = intro_moves[global.intro_turn];
 	}		
 }
+
+
+//Game start
+if (!global.intro_is_playing) && (global.turn == 0)
+{
+	y = 145;
+}
+

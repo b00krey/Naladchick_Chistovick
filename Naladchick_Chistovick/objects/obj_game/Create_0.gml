@@ -2,6 +2,7 @@
 global.timer = 0;
 global.turn = 0;
 global.turn_counter = 0;
+global.first_frame = true;
 
 //Shup breaking
 global.shup_is_broken= 0;

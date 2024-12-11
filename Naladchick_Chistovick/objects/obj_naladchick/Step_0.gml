@@ -11,6 +11,15 @@ if global.intro_is_playing
 	}else if (global.intro_turn == 19) {
 		sprite_index =spr_naladchick;
 		x = 820;
-	}
-		
+	}	
 }
+
+
+//Game start
+if (!global.intro_is_playing) && (global.turn == 0)
+{
+	x = 820;
+	y = 600;
+	sprite_index =spr_naladchick
+}
+	
