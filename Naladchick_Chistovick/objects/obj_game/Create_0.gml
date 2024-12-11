@@ -10,6 +10,9 @@ global.shup_is_broken= 0;
 //Endings
 global.good_ending_treshold = 100;
 
+//Pause
+global.pause = false;
+
 //Intro
 global.intro_turn = 0;
 global.intro_turn_timer = 15;

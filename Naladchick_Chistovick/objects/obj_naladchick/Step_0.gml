@@ -18,8 +18,42 @@ if global.intro_is_playing
 //Game start
 if (!global.intro_is_playing) && (global.turn == 0)
 {
-	x = 820;
+	curr_pos = 1;
 	y = 600;
 	sprite_index =spr_naladchick
 }
 	
+
+//Gameplay
+if (!global.intro_is_playing) && (!global.pause)
+{
+	//Position estimation
+	if global.right_press
+	{
+		if curr_pos > 0
+		{
+			curr_pos -= 1;	
+		}
+	}
+	else if global.left_press
+	{
+		if curr_pos < 3
+		{
+			curr_pos += 1;	
+		}
+	}
+
+
+	//Positioning
+	x = pos[curr_pos]
+
+	//Sprite_check
+	if curr_pos > 1
+	{
+		sprite_index = spr_naladhick_left;	
+	}
+	else
+	{
+		sprite_index = spr_naladchick;	
+	}
+}

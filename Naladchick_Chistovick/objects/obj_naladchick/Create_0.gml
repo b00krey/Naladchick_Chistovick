@@ -16,3 +16,9 @@ intro_moves[12] = [620, 430];
 intro_moves[13] = [700, 480];
 intro_moves[14] = [770, 540];
 intro_moves[15] = [830, 600];
+
+//Positions
+pos[0] = 820;
+pos[1] = 1020;
+pos[2] = 620;
+pos[3] = 420;
