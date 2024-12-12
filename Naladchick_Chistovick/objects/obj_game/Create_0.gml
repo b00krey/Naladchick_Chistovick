@@ -5,7 +5,10 @@ global.game_turn_counter = 60;
 global.game_first_frame = true;
 
 //Shup breaking
-global.shup_is_broken= 0;
+global.shup_is_broken= false;
+global.shup1_is_broken = false;
+global.shup2_is_broken = false;
+global.shup3_is_broken = false;
 
 //Endings
 global.good_ending_treshold = 100;

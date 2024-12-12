@@ -54,3 +54,4 @@ if (global.game_turn % 20 == 0) && (global.game_turn != 0)
 		}
 	global.game_turn += 1;
 	}
+

@@ -47,8 +47,7 @@ if (!global.intro_is_playing) && (!global.pause)
 
 	//Positioning
 	x = pos[curr_pos]
-
-	//Sprite_check
+	
 	if curr_pos > 1
 	{
 		sprite_index = spr_naladchick;
