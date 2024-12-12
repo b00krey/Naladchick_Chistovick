@@ -20,3 +20,4 @@
 	//Resetting the game
 	global.shup_is_broken = false;
 	global.pause = false;
+	global.can_break = true;

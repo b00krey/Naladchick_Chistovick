@@ -8,7 +8,6 @@ if global.intro_is_playing
 	}		
 }
 
-
 //Game start
 if (!global.intro_is_playing) && checker
 {
@@ -17,6 +16,13 @@ if (!global.intro_is_playing) && checker
 }
 
 
+//If the shup is broken
+if (curr_pos >= 5) && (global.can_break) 
+{
+	global.shup_is_broken = true;
+	is_speedrunning = false;
+	global.can_break = false;
+}
 
 //Gameplay
 if (!global.intro_is_playing) && (!global.pause)
@@ -52,12 +58,10 @@ if (!global.intro_is_playing) && (!global.pause)
 		if is_moving
 		{
 			curr_pos += 1;
-			if (curr_pos <= 5) {
+			if (curr_pos <= 5)
+			{
 				y = moves[curr_pos];
-			} else {
-				global.shup_is_broken = true;
-				is_speedrunning = false;
-			}
+			} 
 		}
 	}
 }

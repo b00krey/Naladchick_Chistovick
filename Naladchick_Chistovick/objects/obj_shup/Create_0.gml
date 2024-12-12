@@ -8,6 +8,9 @@ intro_moves[17] = 145;
 //Checker for intro
 checker = true;
 
+//Cheker for breaking
+global.can_break = true;
+
 
 //Gameplay
 is_moving = false;
@@ -17,10 +20,6 @@ global.probability = 0.25; // probability of a shup start moving
 global.speedrun_probability = 0.2 //probability of a shup start moving fast
 is_speedrunning = false;
 global.shup_timer = 60;
-
-
-//Pause
-pause_timer = 120;
 
 //Moves coordinates
 moves[0] = 145;
