@@ -16,6 +16,7 @@ global.points = 0;
 
 //Pause
 global.pause = false;
+pause_timer = 120;
 
 //Intro
 global.intro_turn = 0;
@@ -23,3 +24,19 @@ global.intro_turn_timer = 15;
 global.intro_timer = 0;
 global.intro_stop_turn = 23;
 global.intro_is_playing = true;
+
+
+//Vars for shups
+	//Gameplay
+	is_moving = false;
+	curr_pos = 0;
+	move_timer = 0;
+	is_speedrunning = false;
+
+	//Moves coordinates
+	moves[0] = 145;
+	moves[1] = 210;
+	moves[2] = 280;
+	moves[3] = 350;
+	moves[4] = 400;
+	moves[5] = 600;

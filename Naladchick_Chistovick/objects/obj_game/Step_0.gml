@@ -22,7 +22,7 @@ if global.intro_turn == global.intro_stop_turn
 
 
 //Game timer
-if !global.intro_is_playing
+if (!global.intro_is_playing) && (!global.pause)
 {
 	global.game_timer += 1;
 	if global.game_timer == global.game_turn_counter
@@ -54,4 +54,33 @@ if (global.game_turn % 20 == 0) && (global.game_turn != 0)
 		}
 	global.game_turn += 1;
 	}
-
+	
+//Retracting shup
+if global.shup_is_broken
+{
+	global.pause = true;
+	
+	//Playing premya unit break animation
+	if !global.shup1_is_broken
+	{
+		global.shup1_is_broken = true;
+		instance_destroy(obj_premya1);
+		instance_create_layer(-130, 666, "golovas", obj_break_premya);
+	}
+	else if !global.shup2_is_broken
+	{
+		global.shup2_is_broken = true;
+		instance_destroy(obj_premya2);
+		instance_create_layer(-77, 666, "golovas", obj_break_premya);
+	}
+	else if !global.shup3_is_broken
+	{
+		global.shup3_is_broken = true;
+		instance_destroy(obj_premya3);
+		instance_create_layer(-24, 666, "golovas", obj_break_premya);
+	}
+	
+	global.shup_is_broken = false;
+	alarm[0] = 120;
+	
+}

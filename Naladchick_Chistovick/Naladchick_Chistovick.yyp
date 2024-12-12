@@ -48,6 +48,7 @@
   "name":"Naladchick_Chistovick",
   "resources":[
     {"id":{"name":"fnt_gost","path":"fonts/fnt_gost/fnt_gost.yy",},},
+    {"id":{"name":"obj_break_premya","path":"objects/obj_break_premya/obj_break_premya.yy",},},
     {"id":{"name":"obj_dir_left","path":"objects/obj_dir_left/obj_dir_left.yy",},},
     {"id":{"name":"obj_dir_right","path":"objects/obj_dir_right/obj_dir_right.yy",},},
     {"id":{"name":"obj_game_overlay","path":"objects/obj_game_overlay/obj_game_overlay.yy",},},

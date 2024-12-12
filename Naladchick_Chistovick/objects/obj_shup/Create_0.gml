@@ -19,6 +19,9 @@ is_speedrunning = false;
 global.shup_timer = 60;
 
 
+//Pause
+pause_timer = 120;
+
 //Moves coordinates
 moves[0] = 145;
 moves[1] = 210;
