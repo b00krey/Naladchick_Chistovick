@@ -1,2 +1,1 @@
-// Zeroing the variable
-global.left_press = false;
+key_left = virtual_key_add(x, y, 570, 720, ord("A"));

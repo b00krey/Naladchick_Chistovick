@@ -18,7 +18,10 @@ intro_moves[14] = [770, 540];
 intro_moves[15] = [830, 600];
 
 //Positions
-pos[0] = 820;
-pos[1] = 1020;
-pos[2] = 620;
-pos[3] = 420;
+pos[0] = 300;
+pos[1] = 550;
+pos[2] = 815;
+pos[3] = 1080;
+
+// Checker
+checker = true;

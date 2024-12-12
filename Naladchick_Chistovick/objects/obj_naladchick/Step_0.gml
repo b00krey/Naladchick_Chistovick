@@ -10,17 +10,18 @@ if global.intro_is_playing
 		sprite_index = spr_naladchick_falling2;
 	}else if (global.intro_turn == 19) {
 		sprite_index =spr_naladchick;
-		x = 820;
+		x = pos[2];
 	}	
 }
 
 
 //Game start
-if (!global.intro_is_playing) && (global.turn == 0)
+if (!global.intro_is_playing) && checker
 {
-	curr_pos = 1;
+	curr_pos = 2;
 	y = 600;
 	sprite_index =spr_naladchick
+	checker = false;
 }
 	
 
@@ -28,14 +29,14 @@ if (!global.intro_is_playing) && (global.turn == 0)
 if (!global.intro_is_playing) && (!global.pause)
 {
 	//Position estimation
-	if global.right_press
+	if keyboard_check_pressed(ord("A"))
 	{
 		if curr_pos > 0
 		{
 			curr_pos -= 1;	
 		}
 	}
-	else if global.left_press
+	else if keyboard_check_pressed(ord("D"))
 	{
 		if curr_pos < 3
 		{
@@ -50,10 +51,10 @@ if (!global.intro_is_playing) && (!global.pause)
 	//Sprite_check
 	if curr_pos > 1
 	{
-		sprite_index = spr_naladhick_left;	
+		sprite_index = spr_naladchick;
 	}
 	else
 	{
-		sprite_index = spr_naladchick;	
+		sprite_index = spr_naladhick_left;
 	}
 }
