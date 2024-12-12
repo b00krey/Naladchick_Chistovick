@@ -1,8 +1,8 @@
 //Timer
-global.timer = 0;
-global.turn = 0;
-global.turn_counter = 0;
-global.first_frame = true;
+global.game_timer = 0;
+global.game_turn = 0;
+global.game_turn_counter = 60;
+global.game_first_frame = true;
 
 //Shup breaking
 global.shup_is_broken= 0;

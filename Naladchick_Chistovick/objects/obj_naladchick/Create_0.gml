@@ -20,7 +20,7 @@ intro_moves[15] = [830, 600];
 //Positions
 pos[0] = 300;
 pos[1] = 550;
-pos[2] = 815;
+pos[2] = 820;
 pos[3] = 1080;
 
 // Checker

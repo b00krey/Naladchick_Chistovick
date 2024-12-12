@@ -26,9 +26,15 @@ if (!global.intro_is_playing) && (!global.pause)
         move_timer = 0;
         y = moves[curr_pos]
         global.points += 1;
+		is_speedrunning = false;
     }
 
-    move_timer += 1;
+	if !is_speedrunning
+	{
+		move_timer += 1;
+	} else {
+		move_timer += 2;
+	}
     if (move_timer >= global.shup_timer) {
         move_timer = 0;
 		
@@ -36,6 +42,10 @@ if (!global.intro_is_playing) && (!global.pause)
 		if (random(1) < global.probability)
 		{
 			is_moving = true;
+			if (random(1) < global.speedrun_probability)
+			{
+				is_speedrunning = true;	
+			}
 		}
 		
 		//Start moving if the check is true
@@ -45,7 +55,8 @@ if (!global.intro_is_playing) && (!global.pause)
 			if (curr_pos <= 5) {
 				y = moves[curr_pos];
 			} else {
-				is_broken = true;
+				global.shup_is_broken = true;
+				is_speedrunning = false;
 			}
 		}
 	}
