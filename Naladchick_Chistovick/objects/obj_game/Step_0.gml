@@ -41,21 +41,21 @@ if (global.game_turn % 20 == 0) && (global.game_turn != 0) && (!global.pause) &&
 	{
 	last_game_turn = global.game_turn;
 	last_frame = frame_counter;
-	if (global.probability < 0.5)
+	if (global.probability < 0.65)
 		{
-		global.probability += 0.01;	
+		global.probability += 0.05;	
 		}
 
 	//Decreasing spawn timer
-	if (global.shup_timer > 50)
+	if (global.shup_timer > 60)
 		{
 		global.shup_timer -= 1;	
 		}
 		
 	//Incresing speedrunning probability
-	if (global.speedrun_probability < 1.00)
+	if (global.speedrun_probability < 0.65)
 		{
-		global.speedrun_probability += 0.5;	
+		global.speedrun_probability += 0.01;	
 		}
 	global.game_turn += 1;
 	}

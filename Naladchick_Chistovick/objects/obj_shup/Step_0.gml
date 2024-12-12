@@ -31,8 +31,14 @@ if (!global.intro_is_playing) && (!global.pause)
         curr_pos = 0;
         move_timer = 0;
         y = moves[curr_pos]
-        global.points += 1;
+		if !is_speedrunning
+		{
+			global.points += 1;
+		} else {
+			global.points +=2;
+		}
 		is_speedrunning = false;
+		is_moving = false;
     }
 
 	if !is_speedrunning

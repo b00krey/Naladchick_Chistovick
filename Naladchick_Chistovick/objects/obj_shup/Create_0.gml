@@ -19,7 +19,7 @@ move_timer = 0;
 global.probability = 0.25; // probability of a shup start moving
 global.speedrun_probability = 0.2 //probability of a shup start moving fast
 is_speedrunning = false;
-global.shup_timer = 60;
+global.shup_timer = 80;
 
 //Moves coordinates
 moves[0] = 145;
