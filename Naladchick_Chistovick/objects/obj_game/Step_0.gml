@@ -34,7 +34,7 @@ if (!global.intro_is_playing) && (!global.pause)
 
 
 //Game timer for shups
-if (global.game_turn % 20 == 0) && (global.game_turn != 0)
+if (global.game_turn % 20 == 0) && (global.game_turn != 0) && (!global.pause)
 	{
 	if (global.probability < 1.00)
 		{
@@ -78,9 +78,12 @@ if global.shup_is_broken
 		global.shup3_is_broken = true;
 		instance_destroy(obj_premya3);
 		instance_create_layer(-24, 666, "golovas", obj_break_premya);
+		global.last_shup_broken = true;
 	}
 	
-	global.shup_is_broken = false;
-	alarm[0] = 120;
-	
+	if !global.last_shup_broken
+	{
+		global.shup_is_broken = false;
+		alarm[0] = 120;
+	}
 }

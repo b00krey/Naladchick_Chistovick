@@ -16,7 +16,7 @@ global.points = 0;
 
 //Pause
 global.pause = false;
-pause_timer = 120;
+global.last_shup_broken = false;
 
 //Intro
 global.intro_turn = 0;
