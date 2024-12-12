@@ -5,3 +5,6 @@ intro_moves[18] = 730;
 intro_moves[19] = 700;
 intro_moves[20] = 670;
 intro_moves[21] = 656;
+
+//Checker for intro stop
+checker = true;

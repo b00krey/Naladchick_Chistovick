@@ -10,7 +10,7 @@ if global.intro_is_playing
 
 
 //Game start
-if (!global.intro_is_playing) && (global.turn == 0)
+if (!global.intro_is_playing) && checker
 {
 	y = 656;
 	sprite_index = spr_game_overlay;
@@ -18,4 +18,5 @@ if (!global.intro_is_playing) && (global.turn == 0)
 	instance_create_layer(-77, 666, "golovas", obj_premya2);
 	instance_create_layer(-24, 666, "golovas", obj_premya3);
 	instance_create_layer(592, 620, "golovas", obj_pause);
+	checker = false;
 }

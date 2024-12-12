@@ -7,6 +7,12 @@ if global.intro_is_playing
 		global.intro_turn += 1;
 		global.intro_timer = 0;
 	}
+	
+	//Intro skip
+	if (keyboard_check_pressed(ord("A")) + keyboard_check_pressed(ord("D"))) != 0
+	{
+		global.intro_is_playing = false;	
+	}
 }
 
 if global.intro_turn == global.intro_stop_turn

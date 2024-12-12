@@ -9,6 +9,7 @@ global.shup_is_broken= 0;
 
 //Endings
 global.good_ending_treshold = 100;
+global.points = 0;
 
 //Pause
 global.pause = false;

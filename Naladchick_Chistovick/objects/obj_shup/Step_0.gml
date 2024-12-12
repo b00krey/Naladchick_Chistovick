@@ -10,8 +10,43 @@ if global.intro_is_playing
 
 
 //Game start
-if (!global.intro_is_playing) && (global.turn == 0)
+if (!global.intro_is_playing) && checker
 {
 	y = 145;
+	checker = false;
 }
 
+
+
+//Gameplay
+if (!global.intro_is_playing) && (!global.pause)
+{
+	if place_meeting(x, y, obj_naladchick) {
+        curr_pos = 0;
+        move_timer = 0;
+        y = moves[curr_pos]
+        global.points += 1;
+    }
+
+    move_timer += 1;
+    if (move_timer >= global.shup_timer) {
+        move_timer = 0;
+		
+		//Start moving check
+		if (random(1) < global.probability)
+		{
+			is_moving = true;
+		}
+		
+		//Start moving if the check is true
+		if is_moving
+		{
+			curr_pos += 1;
+			if (curr_pos <= 5) {
+				y = moves[curr_pos];
+			} else {
+				is_broken = true;
+			}
+		}
+	}
+}
