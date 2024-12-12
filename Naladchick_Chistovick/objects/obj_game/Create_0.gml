@@ -40,3 +40,8 @@ global.intro_is_playing = true;
 	moves[3] = 350;
 	moves[4] = 400;
 	moves[5] = 600;
+
+//Frame counter
+frame_counter = 0;
+last_frame = 0;
+last_game_turn = 0;

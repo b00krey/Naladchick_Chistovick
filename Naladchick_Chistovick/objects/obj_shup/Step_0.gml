@@ -38,14 +38,17 @@ if (!global.intro_is_playing) && (!global.pause)
 	if !is_speedrunning
 	{
 		move_timer += 1;
+		sprite_index = spr_shup;
 	} else {
 		move_timer += 2;
+		sprite_index = spr_shup_speedrunning;
 	}
     if (move_timer >= global.shup_timer) {
         move_timer = 0;
 		
 		//Start moving check
-		if (random(1) < global.probability)
+		randomize()
+		if (random(1) < global.probability) && (!is_moving)
 		{
 			is_moving = true;
 			if (random(1) < global.speedrun_probability)

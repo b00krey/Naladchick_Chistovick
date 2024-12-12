@@ -77,6 +77,7 @@
     {"id":{"name":"spr_pause_buttom","path":"sprites/spr_pause_buttom/spr_pause_buttom.yy",},},
     {"id":{"name":"spr_premya_breaking","path":"sprites/spr_premya_breaking/spr_premya_breaking.yy",},},
     {"id":{"name":"spr_premya","path":"sprites/spr_premya/spr_premya.yy",},},
+    {"id":{"name":"spr_shup_speedrunning","path":"sprites/spr_shup_speedrunning/spr_shup_speedrunning.yy",},},
     {"id":{"name":"spr_shup","path":"sprites/spr_shup/spr_shup.yy",},},
     {"id":{"name":"ui_exit","path":"sprites/ui_exit/ui_exit.yy",},},
     {"id":{"name":"ui_play","path":"sprites/ui_play/ui_play.yy",},},

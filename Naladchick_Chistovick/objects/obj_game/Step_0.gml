@@ -1,3 +1,6 @@
+//Frame counting
+frame_counter += 1;
+
 //Intro timer
 if global.intro_is_playing
 {
@@ -34,23 +37,25 @@ if (!global.intro_is_playing) && (!global.pause)
 
 
 //Game timer for shups
-if (global.game_turn % 20 == 0) && (global.game_turn != 0) && (!global.pause)
+if (global.game_turn % 20 == 0) && (global.game_turn != 0) && (!global.pause) && (last_game_turn != global.game_turn) && (last_frame != frame_counter)
 	{
-	if (global.probability < 1.00)
+	last_game_turn = global.game_turn;
+	last_frame = frame_counter;
+	if (global.probability < 0.5)
 		{
-		global.probability += 0.05;	
+		global.probability += 0.01;	
 		}
 
 	//Decreasing spawn timer
-	if (global.shup_timer > 20)
+	if (global.shup_timer > 50)
 		{
-		global.shup_timer -= 5;	
+		global.shup_timer -= 1;	
 		}
 		
 	//Incresing speedrunning probability
 	if (global.speedrun_probability < 1.00)
 		{
-		global.speedrun_probability += 0.1;	
+		global.speedrun_probability += 0.5;	
 		}
 	global.game_turn += 1;
 	}
@@ -66,6 +71,7 @@ if global.shup_is_broken
 		global.shup1_is_broken = true;
 		instance_destroy(obj_premya1);
 		instance_create_layer(-130, 666, "golovas", obj_break_premya);
+		
 	}
 	else if !global.shup2_is_broken
 	{
