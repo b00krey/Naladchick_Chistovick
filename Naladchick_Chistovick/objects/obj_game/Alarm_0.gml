@@ -47,6 +47,20 @@
 	global.can_break = true;
 	
 	//REsetting the shups
-	global.probability = (global.probability * 0.5);
-	global.speedrun_probability = (global.speedrun_probability * 0.5)
+	global.probability = (global.probability * 0.25);
+	global.speedrun_probability = (global.speedrun_probability * 0.25)
 	global.shup_timer = round(global.shup_timer * 0.5)
+
+
+//Game over
+if global.last_shup_broken
+{
+	if global.points >= global.good_ending_treshold
+	{
+		room_goto(rm_nakadchicks_win);
+	}
+	else
+	{
+		room_goto(rm_maschines_win);
+	}
+}

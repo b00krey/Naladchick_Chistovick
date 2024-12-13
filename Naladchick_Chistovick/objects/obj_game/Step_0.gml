@@ -87,9 +87,9 @@ if global.shup_is_broken
 		global.last_shup_broken = true;
 	}
 	
-	if !global.last_shup_broken
-	{
 		global.shup_is_broken = false;
 		alarm[0] = 120;
-	}
+		
 }
+
+
