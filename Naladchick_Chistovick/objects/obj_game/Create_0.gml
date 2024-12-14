@@ -45,3 +45,7 @@ global.intro_is_playing = true;
 frame_counter = 0;
 last_frame = 0;
 last_game_turn = 0;
+
+
+//Playing music
+audio_play_sound(muz_battle, 1, true);

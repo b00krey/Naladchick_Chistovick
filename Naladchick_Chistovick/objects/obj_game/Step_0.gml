@@ -64,7 +64,7 @@ if (global.game_turn % 20 == 0) && (global.game_turn != 0) && (!global.pause) &&
 if global.shup_is_broken
 {
 	global.pause = true;
-	
+	audio_pause_sound(muz_battle);
 	//Playing premya unit break animation
 	if !global.shup1_is_broken
 	{

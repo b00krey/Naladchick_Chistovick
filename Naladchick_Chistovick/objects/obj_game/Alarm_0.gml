@@ -45,8 +45,9 @@
 	global.shup_is_broken = false;
 	global.pause = false;
 	global.can_break = true;
+	audio_resume_sound(muz_battle);
 	
-	//REsetting the shups
+	//Resetting the shups
 	global.probability = (global.probability * 0.25);
 	global.speedrun_probability = (global.speedrun_probability * 0.25)
 	global.shup_timer = round(global.shup_timer * 0.5)
@@ -55,12 +56,13 @@
 //Game over
 if global.last_shup_broken
 {
-	//Resetting all the game
+	//Resetting the game
 	global.intro_turn = 0;
 	global.intro_turn_timer = 15;
 	global.intro_timer = 0;
 	global.intro_stop_turn = 23;
 	global.intro_is_playing = true;
+	audio_stop_sound(muz_battle);
 	
 	if global.points >= global.good_ending_treshold
 	{

@@ -1,2 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Playing the music
+audio_play_sound(mus_mrazota, 1, true);
