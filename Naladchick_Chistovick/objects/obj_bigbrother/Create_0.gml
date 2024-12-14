@@ -31,3 +31,7 @@ global.recordslist[19] = [0, "NALAD"];
 
 //Menu theme
 global.theme_is_playing = false;
+
+
+//If the tseh starts again
+global.tseh_starts_again = false;

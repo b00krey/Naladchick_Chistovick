@@ -1,3 +1,11 @@
+//Restart if come again
+if global.tseh_starts_again
+{
+	global.tseh_starts_again = false;
+	room_restart();
+}
+
+
 //Timer
 global.game_timer = 0;
 global.game_turn = 0;
