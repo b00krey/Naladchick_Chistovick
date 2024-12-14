@@ -55,6 +55,13 @@
 //Game over
 if global.last_shup_broken
 {
+	//Resetting all the game
+	global.intro_turn = 0;
+	global.intro_turn_timer = 15;
+	global.intro_timer = 0;
+	global.intro_stop_turn = 23;
+	global.intro_is_playing = true;
+	
 	if global.points >= global.good_ending_treshold
 	{
 		room_goto(rm_nakadchicks_win);

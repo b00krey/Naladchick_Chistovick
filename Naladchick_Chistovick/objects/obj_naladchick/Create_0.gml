@@ -18,6 +18,7 @@ intro_moves[14] = [770, 540];
 intro_moves[15] = [830, 600];
 
 //Positions
+curr_pos = 0;
 pos[0] = 300;
 pos[1] = 550;
 pos[2] = 820;
