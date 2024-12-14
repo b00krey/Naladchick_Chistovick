@@ -1,7 +1,10 @@
 //Theme playing
 if !global.theme_is_playing
 {
+	if global.music_turned
+	{
 	audio_play_sound(mus_mrazota, 1, true);
+	}
 	global.theme_is_playing = true;
 }
 

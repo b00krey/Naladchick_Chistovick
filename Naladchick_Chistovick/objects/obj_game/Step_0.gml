@@ -92,4 +92,3 @@ if global.shup_is_broken
 		
 }
 
-

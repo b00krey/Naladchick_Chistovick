@@ -48,4 +48,7 @@ last_game_turn = 0;
 
 
 //Playing music
-audio_play_sound(muz_battle, 1, true);
+if global.music_turned
+{
+	audio_play_sound(muz_battle, 1, true);
+}
