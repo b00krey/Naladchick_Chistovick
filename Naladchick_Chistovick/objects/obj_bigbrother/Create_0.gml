@@ -28,3 +28,6 @@ global.recordslist[17] = [0, "NALAD"];
 global.recordslist[18] = [0, "NALAD"];
 global.recordslist[19] = [0, "NALAD"];
 
+
+//Menu theme
+global.theme_is_playing = false;

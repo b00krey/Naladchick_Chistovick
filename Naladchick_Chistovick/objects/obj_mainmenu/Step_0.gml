@@ -1,7 +1,16 @@
+//Theme playing
+if !global.theme_is_playing
+{
+	audio_play_sound(mus_mrazota, 1, true);
+	global.theme_is_playing = true;
+}
+
+
 //Menu navigation
 if keyboard_check_pressed(ord("Q"))
 {
 	audio_stop_sound(mus_mrazota);
+	global.theme_is_playing = false;
 	room_goto(rm_tseh1);	
 }
 else if keyboard_check_pressed(ord("W"))
