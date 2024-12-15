@@ -26,3 +26,9 @@ pos[3] = 1080;
 
 // Checker
 checker = true;
+
+//Playing jump_sound
+if global.sound_turned
+{
+	audio_play_sound(sfx_jump, 1, false);	
+}

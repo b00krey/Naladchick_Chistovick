@@ -100,4 +100,3 @@ if global.shup_is_broken
 		alarm[0] = 120;
 		
 }
-

@@ -1,0 +1,1 @@
+key_pressed = virtual_key_add(x, y, 120, 120, ord("H"));

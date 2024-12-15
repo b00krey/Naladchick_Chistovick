@@ -1,10 +1,6 @@
 //Intro
 if global.intro_is_playing
 {
-	if global.sound_turned
-	{
-		audio_play_sound(sfx_jump, 1, false);	
-	}
 	if global.intro_turn < 15 {
 		y = intro_moves[global.intro_turn][1];
 		x = intro_moves[global.intro_turn][0];

@@ -9,6 +9,10 @@ if !global.theme_is_playing
 }
 
 
+//Forcing Tseh to play intro
+global.tseh_starts_again = true;
+
+
 //Menu navigation
 if keyboard_check_pressed(ord("Q"))
 {
