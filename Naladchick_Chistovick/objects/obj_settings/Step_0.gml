@@ -20,6 +20,10 @@ if keyboard_check_pressed(ord("X"))
 	global.music_turned = false;
 	audio_stop_all();
 	}
+	else
+	{
+		global.music_turned = true;
+	}
 }
 
 

@@ -1,4 +1,5 @@
 //Loading the game
+global.recordslist = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0,];
 load_game();
 
 //Settings
