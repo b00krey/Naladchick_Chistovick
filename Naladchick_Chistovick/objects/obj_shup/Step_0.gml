@@ -19,9 +19,15 @@ if (!global.intro_is_playing) && checker
 //If the shup is broken
 if (curr_pos >= 5) && (global.can_break) 
 {
+	if global.sound_turned
+	{
+		audio_play_sound(sfx_shup_is_broken, 1, false);
+		audio_play_sound(sfx_premya_razbita, 1, false);
+	}
 	global.shup_is_broken = true;
 	is_speedrunning = false;
 	global.can_break = false;
+	
 }
 
 //Gameplay
@@ -30,7 +36,12 @@ if (!global.intro_is_playing) && (!global.pause)
 	if place_meeting(x, y, obj_naladchick) {
         curr_pos = 0;
         move_timer = 0;
-        y = moves[curr_pos]
+        y = moves[curr_pos];
+		if global.sound_turned
+		{
+			audio_play_sound(sfx_shup_is_caught, 1, false);
+		}
+		
 		if !is_speedrunning
 		{
 			global.points += 1;

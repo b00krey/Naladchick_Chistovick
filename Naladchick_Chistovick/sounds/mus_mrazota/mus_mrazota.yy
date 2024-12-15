@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":139.49388,
+  "duration":128.54857,
   "name":"mus_mrazota",
   "parent":{
     "name":"music",

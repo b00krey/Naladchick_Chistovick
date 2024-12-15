@@ -1,3 +1,12 @@
+//Restart if come again
+if global.tseh_starts_again
+{
+	global.tseh_starts_again = false;
+	audio_stop_all();
+	room_restart();
+}
+
+
 //Frame counting
 frame_counter += 1;
 
