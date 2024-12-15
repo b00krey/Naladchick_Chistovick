@@ -154,12 +154,12 @@
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"roomId":{"name":"rm_tseh1","path":"rooms/rm_tseh1/rm_tseh1.yy",},},
     {"roomId":{"name":"rm_maschines_win","path":"rooms/rm_maschines_win/rm_maschines_win.yy",},},
-    {"roomId":{"name":"rm_nakadchicks_win","path":"rooms/rm_nakadchicks_win/rm_nakadchicks_win.yy",},},
     {"roomId":{"name":"rm_howtoply","path":"rooms/rm_howtoply/rm_howtoply.yy",},},
     {"roomId":{"name":"rm_whytoplay","path":"rooms/rm_whytoplay/rm_whytoplay.yy",},},
     {"roomId":{"name":"rm_records","path":"rooms/rm_records/rm_records.yy",},},
     {"roomId":{"name":"rm_settings","path":"rooms/rm_settings/rm_settings.yy",},},
     {"roomId":{"name":"rm_razrabs","path":"rooms/rm_razrabs/rm_razrabs.yy",},},
+    {"roomId":{"name":"rm_nakadchicks_win","path":"rooms/rm_nakadchicks_win/rm_nakadchicks_win.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

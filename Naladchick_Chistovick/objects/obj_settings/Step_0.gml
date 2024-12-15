@@ -15,7 +15,11 @@ if keyboard_check_pressed(ord("Z"))
 //Turn ON/OFF music
 if keyboard_check_pressed(ord("X"))
 {
-	global.music_turned = !global.music_turned;
+	if global.music_turned
+	{
+	global.music_turned = false;
+	audio_stop_all();
+	}
 }
 
 
