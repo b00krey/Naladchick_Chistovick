@@ -16,3 +16,9 @@ else if keyboard_check_pressed(ord("E"))
 }
 
 
+//Updating records
+if global.points > global.recordslist[9]
+{
+	global.recordslist[9] = global.points;
+	array_sort(global.recordslist, true);
+}

@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_records",
+  "%Name":"obj_reset_the_records",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_records",
+  "name":"obj_reset_the_records",
   "overriddenProperties":[],
   "parent":{
-    "name":"undermenu",
-    "path":"folders/Objects/mainmenu/undermenu.yy",
+    "name":"settings_buttons",
+    "path":"folders/Objects/settings_buttons.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_settings_button",
+    "path":"sprites/spr_settings_button/spr_settings_button.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

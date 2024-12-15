@@ -17,3 +17,10 @@ else
 
 //Tseh restart
 global.tseh_starts_again = true;
+
+//Updating records
+if global.points > global.recordslist[0]
+{
+	global.recordslist[0] = global.points;
+	array_sort(global.recordslist, false);
+}

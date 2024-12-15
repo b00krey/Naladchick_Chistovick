@@ -50,7 +50,3 @@ else
 	draw_set_colour(c_red);
 	draw_text(828, 398, "OFF");	
 }
-
-//Player name
-draw_set_colour(c_black);
-draw_text(750, 492, global.playername);
