@@ -103,6 +103,7 @@
     {"id":{"name":"rm_settings","path":"rooms/rm_settings/rm_settings.yy",},},
     {"id":{"name":"rm_tseh1","path":"rooms/rm_tseh1/rm_tseh1.yy",},},
     {"id":{"name":"rm_whytoplay","path":"rooms/rm_whytoplay/rm_whytoplay.yy",},},
+    {"id":{"name":"saving_loading_game","path":"scripts/saving_loading_game/saving_loading_game.yy",},},
     {"id":{"name":"mus_mrazota","path":"sounds/mus_mrazota/mus_mrazota.yy",},},
     {"id":{"name":"mus_naladchik_win","path":"sounds/mus_naladchik_win/mus_naladchik_win.yy",},},
     {"id":{"name":"muz_battle","path":"sounds/muz_battle/muz_battle.yy",},},
