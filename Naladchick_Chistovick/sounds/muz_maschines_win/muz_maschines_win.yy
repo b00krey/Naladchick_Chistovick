@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":32.182858,
+  "duration":91.824,
   "name":"muz_maschines_win",
   "parent":{
     "name":"music",
