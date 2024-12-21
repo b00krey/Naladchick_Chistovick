@@ -44,10 +44,14 @@ if (!global.intro_is_playing) && (!global.pause)
 		}
 	}
 
+}
 
-	//Positioning
-	x = pos[curr_pos]
+
+//Positioning
+x = pos[curr_pos]
 	
+if !global.pause
+{
 	if curr_pos > 1
 	{
 		sprite_index = spr_naladchick;
@@ -55,5 +59,30 @@ if (!global.intro_is_playing) && (!global.pause)
 	else
 	{
 		sprite_index = spr_naladhick_left;
+	}
+}
+else
+{
+	if !global.last_shup_broken
+	{
+		if curr_pos > 1
+		{
+			sprite_index = spr_naladchick_hit;
+		}
+		else
+		{
+			sprite_index = spr_naladhick_hit_left;
+		}
+	}
+	else
+	{
+		if curr_pos > 1
+		{
+			sprite_index = spr_naladchick_dead;
+		}
+		else
+		{
+			sprite_index = spr_naladchick_dead_left;
+		}				
 	}
 }
