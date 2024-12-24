@@ -10,7 +10,7 @@ function save_game()
 	};
 
 	var _string = json_stringify(_struct);
-	var _file = file_text_open_write("the_naladchick_saga.txt");
+	var _file = file_text_open_write((working_directory)+("the_naladchick_saga.txt"));
 	file_text_write_string(_file, _string);
 	file_text_close(_file);
 }
@@ -18,7 +18,7 @@ function save_game()
 
 function load_game()
 {
-	if (file_exists("the_naladchick_saga.txt"))
+	if file_exists((working_directory+"the_naladchick_saga.txt"))
 	{
 		var _file = file_text_open_read("the_naladchick_saga.txt");
 		var _json = file_text_read_string(_file);

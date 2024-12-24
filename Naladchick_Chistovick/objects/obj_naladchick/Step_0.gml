@@ -8,11 +8,12 @@ if global.intro_is_playing
 		y = intro_moves[global.intro_turn][1];
 		x = intro_moves[global.intro_turn][0];
 		sprite_index = spr_naladchick_falling2;
-	}else if (global.intro_turn == 19) {
+	} else if (global.intro_turn == 19) {
 		sprite_index =spr_naladchick;
 		x = pos[2];
 	}	
 }
+
 
 
 //Game start
@@ -44,45 +45,49 @@ if (!global.intro_is_playing) && (!global.pause)
 		}
 	}
 
-}
-
-
-//Positioning
-x = pos[curr_pos]
-	
-if !global.pause
-{
+	//Sprites
 	if curr_pos > 1
 	{
-		sprite_index = spr_naladchick;
+		sprite_index = spr_naladchick;	
 	}
 	else
 	{
-		sprite_index = spr_naladhick_left;
+		sprite_index = spr_naladhick_left;	
 	}
+
+	//Positioning
+	x = pos[curr_pos]
 }
-else
+
+
+//Sprites out of gameplay
+if global.pause && !global.intro_is_playing
 {
-	if !global.last_shup_broken
+	if curr_pos > 1
 	{
-		if curr_pos > 1
+		if !global.last_shup_broken
+		{
+			sprite_index = spr_naladhick_hit_left;	
+		}
+		else
+		{
+			sprite_index = spr_naladchick_dead;
+			alarm[0] = 80;
+			alarm[1] = 120;
+		}
+	}
+	else
+	{
+		if !global.last_shup_broken
 		{
 			sprite_index = spr_naladchick_hit;
 		}
 		else
 		{
-			sprite_index = spr_naladhick_hit_left;
-		}
-	}
-	else
-	{
-		if curr_pos > 1
-		{
-			sprite_index = spr_naladchick_dead;
-		}
-		else
-		{
 			sprite_index = spr_naladchick_dead_left;
-		}				
+			alarm[0] = 60;
+			alarm[1] = 70;
+		}	
 	}
 }
+
