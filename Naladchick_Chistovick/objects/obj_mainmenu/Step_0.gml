@@ -1,14 +1,3 @@
-//Theme playing
-if !global.theme_is_playing
-{
-	if global.music_turned
-	{
-	audio_play_sound(mus_mrazota, 1, true);
-	}
-	global.theme_is_playing = true;
-}
-
-
 //Forcing Tseh to play intro
 global.tseh_starts_again = true;
 
@@ -23,18 +12,6 @@ if keyboard_check_pressed(ord("Q"))
 else if keyboard_check_pressed(ord("W"))
 {
 	room_goto(rm_howtoply)
-}
-else if keyboard_check_pressed(ord("E"))
-{
-	room_goto(rm_whytoplay)
-}
-else if keyboard_check_pressed(ord("R"))
-{
-	room_goto(rm_records)
-}
-else if keyboard_check_pressed(ord("T"))
-{
-	room_goto(rm_settings)
 }
 else if keyboard_check_pressed(ord("Y"))
 {

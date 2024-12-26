@@ -1,5 +1,7 @@
 //Intro moves
 sprite_index = spr_naladchick_falling1;
+image_speed = 1;
+
 intro_moves[0] = [-150, 700];
 intro_moves[1] = [-150, 700];
 intro_moves[2] = [-150, 700];

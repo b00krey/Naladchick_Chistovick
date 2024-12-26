@@ -72,8 +72,6 @@ if global.pause && !global.intro_is_playing
 		else
 		{
 			sprite_index = spr_naladchick_dead;
-			alarm[0] = 80;
-			alarm[1] = 120;
 		}
 	}
 	else
@@ -85,9 +83,13 @@ if global.pause && !global.intro_is_playing
 		else
 		{
 			sprite_index = spr_naladchick_dead_left;
-			alarm[0] = 60;
-			alarm[1] = 70;
 		}	
 	}
 }
 
+
+//Stopping death animation
+if image_index == 3
+{
+	image_speed = 0;	
+}

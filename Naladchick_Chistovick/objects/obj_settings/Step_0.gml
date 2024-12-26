@@ -8,7 +8,14 @@ if keyboard_check_pressed(ord("Q"))
 //Turn ON/OFF sound
 if keyboard_check_pressed(ord("Z"))
 {
-	global.sound_turned = !global.sound_turned;
+	if global.sound_turned == 0
+	{
+		global.sound_turned = 1;	
+	}
+	else
+	{
+		global.sound_turned = 0;	
+	}
 }
 
 
@@ -17,28 +24,16 @@ if keyboard_check_pressed(ord("X"))
 {
 	if global.music_turned
 	{
-	global.music_turned = false;
-	audio_stop_all();
+	global.music_turned = 0;
+	audio_pause_all();
 	}
 	else
 	{
-		global.music_turned = true;
+		global.music_turned = 1;
+		audio_resume_all()
 	}
 }
 
-
-//Turn ON/OFF prologue
-if keyboard_check_pressed(ord("C"))
-{
-	global.playprologue = !global.playprologue;
-}
-
-
-//Turn ON/OFF endings
-if keyboard_check_pressed(ord("V"))
-{
-	global.playendings = !global.playendings;
-}
 
 //Zeroing the records
 if keyboard_check_pressed(ord("M"))

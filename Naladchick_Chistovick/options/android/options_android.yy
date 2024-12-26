@@ -10,7 +10,7 @@
   "option_android_build_tools":"",
   "option_android_compile_sdk":"35",
   "option_android_device_support":0,
-  "option_android_display_name":"NaladchickTheMaschineTamer",
+  "option_android_display_name":"NALADCHICK The Maschine Tamer",
   "option_android_facebook_app_display_name":"",
   "option_android_facebook_id":"",
   "option_android_gamepad_support":true,
